@@ -1,0 +1,156 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+/* Base fonts */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f6f6f6;
+    color: #1e293b;
+}
+ 
+/* ---------- Header ---------- */
+header {
+    background: #1e293b;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+ 
+/* container to align everything */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  align-items: center;
+}
+ 
+/* make header text & links align horizontally */
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+ 
+/* your original selectors */
+header .my-details h1 {
+  font-size: auto;
+}
+ 
+header .my-details p a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+ 
+/* ---------- Nav ---------- */
+nav {
+  background: #334155;
+  padding: 12px 0;
+}
+ 
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+ 
+nav a {
+  color: #cbd5e1;
+  text-decoration: none;
+  font-weight: bold;
+}
+ 
+nav a:hover {
+  color: white;
+}
+ 
+/* ---------- Main ---------- */
+main {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+ 
+section {
+  margin-bottom: 40px;
+}
+ 
+h2 {
+  font-size: 26px;
+  margin-bottom: 12px;
+}
+
+/* ---------- Projects ---------- */
+.about-me {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+ 
+.about {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* ---------- Projects ---------- */
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+ 
+.project {
+  background: white;
+  padding: 18px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+ 
+/* Contact */
+#contact p {
+  margin-bottom: 8px;
+}
+ 
+/* ---------- Footer ---------- */
+footer {
+  background: #334155;
+  color: #cbd5e1;
+  text-align: center;
+  padding: 18px 0;
+  margin-top: 30px;
+}
+ 
+/* ---------- Mobile Version ---------- */
+@media (max-width: 480px) {
+ 
+  .header-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+ 
+  .social-links {
+    gap: 10px;
+  }
+ 
+  nav ul {
+    justify-content: flex-start;
+    padding-left: 16px;
+  }
+ 
+  h2 {
+    font-size: 22px;
+  }
+ 
+  .projects-list {
+    grid-template-columns: 1fr;
+  }
+}
