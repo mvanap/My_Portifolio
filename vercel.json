@@ -3,6 +3,6 @@
     { "src":"templates/index.html",
       "use": "@vercel/static"}
   ],
-  "outputDirectory": "templates"
+  "outputDirectory": "."
 }
       
